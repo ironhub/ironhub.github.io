@@ -1,9 +1,9 @@
 ```layout: post
 layout: post
 
-title:  "홈페이지를 만드는 방법"
+title:  "이미지 넣는 방법"
 
-date:   2017-09-04 18:12:59
+date:   2017-09-04 19:50:59
 
 author: C.W.Kim
 
