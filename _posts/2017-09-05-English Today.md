@@ -3,7 +3,7 @@ layout : post
 title : English
 date : 2017-09-05 07:40:11
 author : C.W. Kim
-categories : Iron
+categories : English
 tags : English 
 ---
 
