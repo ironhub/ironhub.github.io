@@ -7,7 +7,7 @@ date:   2017-09-04 18:12:59
 
 author: C.W.Kim
 
-categories: Iron made
+categories: Iron
 
 tags: ipsum
 ---
