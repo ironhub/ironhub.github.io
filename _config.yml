@@ -1,6 +1,6 @@
 # Site settings
 title: Iron Hub 
-subtitle: "A simple blog Using Centranium "
+subtitle: "A simple blog Using Centrarium "
 email: iamairon99@gmail.com
 name: C.W. Kim
 description: >
@@ -15,11 +15,11 @@ logo: "/assets/CircleLogo.png"
 
 # Build settings
 
-#markdown: kramdown
-#paginate: 5
-#paginate_path: "/page:num/"
-#inter_post_navigation: false
-#highlightjs_theme: "monokai-sublime"
+markdown: kramdown
+paginate: 5
+paginate_path: "/page:num/"
+inter_post_navigation: false
+highlightjs_theme: "monokai-sublime"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
