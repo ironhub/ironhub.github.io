@@ -11,14 +11,15 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ironhub.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
-logo: "/assets/logo.png"
+logo: "/assets/CircleLogo.png"
 
 # Build settings
-markdown: kramdown
-paginate: 5
-paginate_path: "/page:num/"
-inter_post_navigation: false
-highlightjs_theme: "monokai-sublime"
+
+#markdown: kramdown
+#paginate: 5
+#paginate_path: "/page:num/"
+#inter_post_navigation: false
+#highlightjs_theme: "monokai-sublime"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
@@ -38,14 +39,11 @@ jekyll-archives:
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
-
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
-
   - cat: Iron
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+    desc: "Iron's talk"
+  - cat: Swift
+    desc: "Swift Language and Usage"
+   
 # Social icons and sharing options
 #
 # Social settings are used in two places:
