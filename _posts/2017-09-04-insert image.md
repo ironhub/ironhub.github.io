@@ -1,4 +1,16 @@
-```이미지는 어떻게 넣을까요```
+```layout: post
+layout: post
+
+title:  "홈페이지를 만드는 방법"
+
+date:   2017-09-04 18:12:59
+
+author: C.W.Kim
+
+categories: Iron
+
+tags: ipsum
+```
 
 #### 이미지는 이렇게 넣나요? ####
 
