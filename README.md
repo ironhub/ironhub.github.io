@@ -1,168 +1,237 @@
-# feature-blog-jekyll [![Code Climate](https://codeclimate.com/github/lavkumarv/feature-blog-jekyll/badges/gpa.svg)](https://codeclimate.com/github/lavkumarv/feature-blog-jekyll) <a href="https://codeclimate.com/github/lavkumarv/feature-blog-jekyll"><img src="https://codeclimate.com/github/lavkumarv/feature-blog-jekyll/badges/issue_count.svg" /></a>
+# Centrarium [![Circle CI](https://circleci.com/gh/bencentra/centrarium/tree/master.svg?style=svg)](https://circleci.com/gh/bencentra/centrarium/tree/master)
 
-Feature Blog is a minimalist, beautiful, responsive theme for Jekyll. It is built using the Bootstrap 3.
+A simple yet classy theme for your Jekyll website or blog. Customizable to fit your style or brand.
 
-Home Page:
+Built with these awesome libraries:
+* [Bourbon][bourbon]
+* [Neat][neat]
+* [Bitters][bitters]
+* [Refills][refills]
+* [Font Awesome][fontawesome]
+* [HighlightJS][highlightjs]
+* [Lightbox][lightbox]
 
-![home](home.jpg "home")
+Here's a [demo](http://bencentra.com/centrarium). It also works on [GitHub Pages](http://bencentra.github.io/centrarium/). I also use it for [my own website][bencentra].
+
+Inspired by dirkfabisch's [Mediator](https://github.com/dirkfabisch/mediator) theme, which I previously used for my own blog, as well as [Type Theme](http://rohanchandra.github.io/type-theme/).
+
+Cover image by Chris M. Morris ([flickr][cover]).
 
 ## Features
 
-* Twitter Bootstrap 3
-* Option to set featured image & video in post
-* Pagination support
-* Disqus comments if you choose to enable
-* MailChip Integration for subscription
-* Tags for [Open Graph](https://developers.facebook.com/docs/opengraph/), [Twitter Cards](https://dev.twitter.com/docs/cards) and Schema.org for a better social sharing experience
-* Support for recent post
-* SEO Enabled theme
-* Beautifully crafted 404 page
-* Custom categories and tags pages
-* Ajax based search
-* Sitemap for search engines
-* Google Fonts
-* Font awesome icons
-* Easy to configure and customize
+This theme comes with a number of features, including:
+* Easily customizable fonts and colors
+* Cover images for your homepage and blog posts
+* Pagination enabled by default
+* Archiving of posts by categories and tags
+* Syntax highlighting for code snippets
+* Disqus integration for post comments
+* Lightbox for viewing full-screen photos and albums
+* Google Analytics with custom page name tracking
+* Social media integration (Twitter, Facebook, LinkedIn, GitHub, and more)
 
-## Basic Setup for a new Jekyll site
+## Installation
 
-1. [Install Jekyll](http://jekyllrb.com) if you haven't already.
-2. Fork the [Feature Blog Theme](https://github.com/lavkumarv/feature-blog-jekyll/fork)
-3. Clone the repo you just forked.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
+If you're just getting started with Jekyll, you can use this repository as a starting point for your own site. Just [download this project](https://github.com/bencentra/centrarium/archive/master.zip) and add all the files to your project. Add your blog posts to the `posts/` directory, and create your pages with the proper Jekyll front matter (see `posts.html` for an example).
 
----
+If your site already uses Jekyll, follow these steps:
 
-## Setup for an Existing Jekyll site
+1. Replace the files in the `_includes`, `_layouts`, and `_sass` directories with those from this project.
+2. Replace your `index.html` with the one from this project, and copy over the `posts.html` file as well.
+3. Copy the contents of the `_config.yml` from this project in to yours, and update the necessary information.
 
-`_config.yml` file:
-
-``` yaml
-# Basic settings
-description:  This is personal blog.
-baseurl: "/"
-url: "https://lavkumarv.github.io"
-twitter_username: LAV_K_V
-github_username:  lavkumarv
-include: ['_pages']
-
-# Build settings
-markdown:    kramdown
-highlighter: pygments
-lsi:         false
-excerpt_separator: "\n\n"
-gems:
-  - jekyll-feed
-  - jekyll-paginate
-exclude:
-  - Gemfile
-  - Gemfile.lock
-
-# pagination
-gems: [jekyll-paginate]
-paginate: 5
-paginate_path: "/page:num/"
-
-# Enable comments
-comments: true
-
-# Markdown settings
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
----
-```
----
-Global Configuration( global.yml):
-``` yaml
-# Site Settings
-title: 'Lav Vishwakarma'
-description: 'My personal Blog'
-url: 'https://lavkumarv.github.io'
-
-# Admin Settings
-admin_name: 'Lav Vishwakarma'
-admin_email: 'lav.kumar.dev@gmail.com'
-
-#####################################################################
-#About Page
-author_name: 'Lav Kumar Vishwakarma'
-author_profession: 'Full Stack Developer'
-author_description: 'A computer science graduate student at University Institute of Technology,
-RGPV with great interest in Software development and coding efficient software.</br></br>
-My 3+ years of experience in web technologies like J2EE/Jersey, Node.js, Angular.js, c#, MongoDB, MySQL,
-Linux with Appointy and TechShanty provides me with a rich experience in coding and maintaining
- large scalable applications.</br></br>
-Working at Appointy as Software Developer Intern, I was involved in Full stack development of a SAAS
-application which is used by 65,000+ business worldwide. '
-author_image: '/images/author.jpg'
-
-# social proiles
-facebook: 'https://www.facebook.com/lavkumarv'
-twitter: 'https://twitter.com/LAV_K_V'
-linkedin: 'https://www.linkedin.com/in/lav-vishwakarma/'
-instagram: 'https://www.instagram.com/vishwakarmalav/'
-github: 'https://github.com/lavkumarv'
-google-plus: 'https://plus.google.com/+LAVKUMARVISHWAKARMAdev'
-stackoverflow: 'http://stackoverflow.com/users/4703818/lav-kumar-vishwakarma'
-#####################################################################
----
-```
-Navigation Bar(nav.yml):
-``` yaml
-main:
-    - { url: '/about', text: 'About' }
----
+Don't forget to install Jekyll and other dependencies:
+```bash
+# cd into project directory
+cd centrarium
+# install Bundler if you don't have it already
+gem install bundler
+# install jekyll, jekyll-archives, jekyll-sitemap, and jekyll-paginate
+bundle install
 ```
 
-## Post Formate:
+## Updating Styles
 
-Image Post:
-``` json
-layout: blog
-title: 'Sample post to check the functionality'
-date: 2017-01-24 12:11:34
-categories: blog
-tags: code
-image: '/images/default.jpg'
-lead_text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-```
-Video Post:
-``` json
-layout: blog
-title: 'Sample post to check the functionality'
-date: 2017-01-24 12:11:34
-categories: blog
-tags: code
-image: '/images/default.jpg'
-lead_text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-```
-## Built With
+If you want change the CSS of the theme, you'll probably want to check out these files in the `_sass/` directory:
 
-* [Bootstrap](http://getbootstrap.com/) - The css framework used
+* `base/_variables.scss`: Common values found throughout the project, including base font size, font families, colors, and more.
+* `base/_typography.scss`: Base typography values for the site (see `typography.html` for a demonstration)
+* `_layout.scss`: The primary styles for the layout and design of the theme.
+
+### Important Variables
+
+Here are the important variables from `base/_variables.scss` you can tweak to customize the theme to your liking:
+
+* `$base-font-family`: The font-family of the body text. Make sure to `@import` any new fonts!
+* `$heading-font-family`: The font-family of the headers. Make sure to `@import` any new fonts!
+* `$base-font-size`: The base font-size. Defaults to $em-base from Bourbon (`bourbon/settings/_px-to-em.scss`).
+* `$base-font-color`: The color for the body text.
+* `$action-color`: The color for links in the body text.
+* `$highlight-color`: The color for the footer and page headers (when no cover image provided).
+
+## Configuration
+
+All configuration options can be found in `_config.yml`.
+
+### Site Settings
+
+* __title:__ The title for your site. Displayed in the navigation menu, the `index.html` header, and the footer.
+* __subtitle:__ The subtitle of your site. Displayed in the `index.html` header.
+* __email:__ Your email address, displayed with the Contact info in the footer.
+* __name:__ Your name. _Currently unused._
+* __description:__ The description of your site. Used for search engine results and displayed in the footer.
+* __baseurl:__ The subpath of your site (e.g. /blog/).
+* __url:__ The base hostname and protocol for your site.
+* __cover:__ The relative path to your site's cover image.
+* __logo:__ The relative path to your site's logo. Used in the navigation menu instead of the title if provided.
+
+### Build Settings
+
+* __markdown:__ Markdown parsing engine. Default is kramdown.
+* __paginate:__ Number of posts to include on one page.
+* __paginate_path:__ URL structure for pages.
+* __inter_post_navigation:__ Whether to render links to the next and previous post on each post.
+
+### Archive Settings
+
+Although this theme comes with a combined, categorized archive (see `posts.html`), you can enable further archive creation thanks to [jekyll-archives][archives]. Support for category and tag archive pages is included, but you can also add your own archive pages for years, months, and days.
+
+To change archive settings, see the __jekyll-archives__ section of `_config.yml`:
+
+```yml
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+```
+
+To fully disable the archive, remove the __jekyll-archives__ section AND remove it from the __gems__ list.
+
+__NOTE:__ the Jekyll Archive gem is NOT included with GitHub pages! Disable the archive feature if you intend to deploy your site to GitHub pages. [Here is a guide](http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html) on how you can use the `jekyll archive` gem with GitHub pages. The general gist: compile the Jekyll site locally and then push that compiled site to GitHub.
+
+A sitemap is also generated using [jekyll-sitemap][sitemap].
+
+### Syntax Highlighting Settings
+
+Inside of a post, you can enable syntax highlighting with the `{% highlight <language> %}` Liquid tag. For example:
+
+```
+{% highlight javascript %}
+function demo(string, times) {
+  for (var i = 0; i < times; i++) {
+    console.log(string);
+  }
+}
+demo("hello, world!", 10);
+{% endhighlight %}
+```
+
+You can change the [HighlightJS theme][highlightjs_theme] in `_config.yml`:
+
+```yml
+highlightjs_theme: "monokai_sublime"
+```
+
+### Disqus Settings
+
+You can enable [Disqus][disqus] comments for you site by including one config option:
+
+* __disqus_shortname:__ Your Disqus username. If the property is set, Disqus comments will be included with your blog posts.
+
+If you want to disable Disqus for only a specific page, add __disqus_disabled: true__ to the page's front matter.
+
+### Google Analytics Settings
+
+You can enable basic [Google Analytics][ga] pageview tracking by including your site's tracking ID:
+
+* __ga_tracking_id__: The Tracking ID for your website. You can find it on your Google Analytics dashboard. If the property is set, Google Analytics will be added to the footer of each page.
+
+### Social Settings
+
+Your personal social network settings are combined with the social sharing options. In the __social__ section of `_config.yml`, include an entry for each network you want to include. For example:
+
+```yml
+social:
+  - name: Twitter                         # Name of the service
+    icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
+    username: TheBenCentra                # (User) Name to display in the footer link
+    url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
+    desc: Follow me on Twitter            # Description to display as link title, etc
+    share: true                           # Include in the "Share" section of posts
+```
+
+### Social Protocols
+
+Using the Open Graph Protocol or Twitter Card metadata, you can automatically set the images and text used when people share your site on Twitter or Facebook. These take a bit of setup, but are well worth it. The relevant fields are at the end of the `_config.yml` file.
+
+Also there is another protocol, the Open Source protocol, for saying where your site is hosted if the source is open. This helps develops more easily see your code if they are interested, or if they have issues. For more, see http://osprotocol.com.
+
+### Category Descriptions
+
+You can enhance the `posts.html` archive page with descriptions of your post categories. See the __descriptions__ section of `_config.yml`:
+
+```yml
+# Category descriptions (for archive pages)
+descriptions:
+  - cat: jekyll
+    desc: "Posts describing Jekyll setup techniques."
+```
+
+### Custom Page-Specific Javascript
+
+You can add page-specific javascript files by adding them to the top-level `/js` directory and including the filename in the __custom_js__ page's configuration file:
+
+```yml
+# Custom js (for individual pages)
+---
+layout: post
+title:  "Dummy Post"
+date:   2015-04-18 08:43:59
+author: Ben Centra
+categories: Dummy
+custom_js:
+- Popmotion
+- Vue
+---
+```
+
+The `/js/` directory would contain the corresponding files:
+
+```bash
+$ ls js/
+Popmotion.js Vue.js
+```
 
 ## Contributing
 
-Contributions are welcome!. Feel free to add a new feature or fix a bug.
+Want to help make this theme even better? Contributions from the community are welcome!
 
-## Authors
+Please follow these steps:
 
-* **Lav Kumar Vishwakarma** - *Initial work* - [lavkumarv](https://github.com/lavkumarv)
+1. Fork/clone this repository.
+2. Develop (and test!) your changes.
+3. Open a pull request on GitHub. A description and/or screenshot of changes would be appreciated!
+4. I ([Ben Centra](https://github.com/bencentra)) will review and merge the pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+MIT. See [LICENSE.MD](https://github.com/bencentra/centrarium/blob/master/LICENSE.md).
+
+[bencentra]: http://bencentra.com
+[bourbon]: http://bourbon.io/
+[neat]: http://neat.bourbon.io/
+[bitters]: http://bitters.bourbon.io/
+[refills]: http://refills.bourbon.io/
+[fontawesome]: http://fortawesome.github.io/Font-Awesome/
+[highlightjs]: https://highlightjs.org/
+[highlightjs_theme]: https://highlightjs.org/static/demo/
+[lightbox]: http://lokeshdhakar.com/projects/lightbox2/
+[cover]: https://www.flickr.com/photos/79666107@N00/3796678503/in/photolist-6MuYfc-61Rtft-8XzPmY-a6Cozm-54eSMs-6oMJmk-aepZQq-9YkPHp-fiAEGE-dVP4Z5-oxPyJP-atKUFJ-9YHWA5-9YF2f2-9YF2gR-9YHVGN-9YHVvs-qZYYQ6-4JqP2i-a2peGy-9YHVUm-9YHVF7-9YHVCL-9YF3NK-cYteMo-aiPmb9-69dtAi-9YF21x-4aWpmn-7SLiUL-77pqVX-8vXbYv-4HGDSH-a2h5P1-8LsZrQ-9aj1ez-auPZ7q-9YHVMd-9YF2bi-9YF23D-8LpWpn-9an6KL-9YHVZL-dqZ3Cz-2GuvnX-9YHWUo-9YHVWd-p5Roh5-i1zTbv-6sYrUT
+[disqus]: https://disqus.com/
+[ga]: http://www.google.com/analytics/
+[archives]: https://github.com/jekyll/jekyll-archives
+[sitemap]: https://github.com/jekyll/jekyll-sitemap
