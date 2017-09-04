@@ -1,4 +1,4 @@
-```layout: post
+---
 layout: post
 
 title:  "이미지 넣는 방법"
@@ -10,7 +10,9 @@ author: C.W.Kim
 categories: Iron
 
 tags: ipsum
-```
+---
+
+
 
 #### 이미지는 이렇게 넣나요? ####
 
