@@ -10,7 +10,7 @@ description: >
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ironhub.github.io" # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
+cover: "/assets/background.png"
 logo: "/assets/CircleLogo.png"
 
 # Build settings
