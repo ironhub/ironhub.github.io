@@ -32,6 +32,10 @@ Github에서는 기존에 프로그램 소스와 부산물들을 올리고 내�
 
 기본적으로 MarkDown을 잘 보여주기 때문에, MarkDown 기반으로 컨텐트를 생산하고 HTML 형식으로 표현하기 위해 jekyll과 같은 사이트 빌딩 프레임워크(?) 와 같이 이용하면 풍성한 웹 사이트를 구축할 수 있게 된다.  
 
+> 그림 #1 - typora ( markdown editor )를 이용하여 컨텐트 작성
+
+[!]("https://ironhub.github.io/assets/icons/typorashot.png")
+
 웹 서핑을 하다보니 , 웹 구축을 위한 프레임워크를 적용할 수있는 방법은 정말 많고도 많더라 아래의 주소에는 오픈소스로 만드는 정적 사이트 생성기들의 순위가 있다.
 
 [Top Open-Source Static Site Generators](https://www.staticgen.com/)
@@ -48,3 +52,4 @@ Github에서는 기존에 프로그램 소스와 부산물들을 올리고 내�
 - ​Disqus [disqus.com](https://disqus.com) ( 사이트에 커멘트를 달수 있도록...)
 
   ​
+
