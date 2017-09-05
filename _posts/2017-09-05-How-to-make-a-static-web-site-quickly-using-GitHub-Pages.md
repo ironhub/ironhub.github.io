@@ -34,7 +34,7 @@ Github에서는 기존에 프로그램 소스와 부산물들을 올리고 내�
 
 > 그림 #1 - typora ( markdown editor )를 이용하여 컨텐트 작성
 
-![typora editing]("https://ironhub.github.io/assets/typorashot.png")
+![typora editing](https://ironhub.github.io/assets/typorashot.png)
 
 웹 서핑을 하다보니 , 웹 구축을 위한 프레임워크를 적용할 수있는 방법은 정말 많고도 많더라 아래의 주소에는 오픈소스로 만드는 정적 사이트 생성기들의 순위가 있다.
 
