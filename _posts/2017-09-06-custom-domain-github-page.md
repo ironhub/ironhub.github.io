@@ -44,7 +44,7 @@ CNAME 레코드에서 www.mydomain.xyz 와 github 페이지와 매핑해줍니�
 
 **이제는 GitHub 에서 Custom domain을 설정해야 합니다.**
 
-GitHub/\<user\>.github.io Repository에서 `Settings` 항목에서  
+GitHub/**user**.github.io Repository에서 `Settings` 항목에서  
 
 ![깃허브 설정에서 custom domain 설정](https://ironhub.github.io/assets/DomainReg5.png)  
 
