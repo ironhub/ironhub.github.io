@@ -28,15 +28,15 @@ tags: GitHub Pages Domain Regitration 도메인등록
 
 도메인 샀다고 치고 www.mydomain.xyz     CNAME 설정을 위하여 부가서비스를 클릭
 
-![부가서비스 클릭](https://ironhub.github.io/assets/DomainReg2.png)
+![부가서비스클릭](https://ironhub.github.io/assets/DomainReg2.png)
 
 부가서비스 설정 화면에서 DNS 레코드 설정을 클릭합니다.
 
-![DNS 레코드 설정 클릭](https://ironhub.github.io/assets/DomainReg3.png)
+![DNS레코드설정클릭](https://ironhub.github.io/assets/DomainReg3.png)
 
 CNAME 레코드에서 www.mydomain.xyz 와 github 페이지와 매핑해줍니다.
 
-![GitHub 페이지와 연결](https://ironhub.github.io/assets/DomainReg4.png)
+![GitHub페이지와연결](https://ironhub.github.io/assets/DomainReg4.png)
 
 값/위치 항목에서 마지막에  `.`  찍는 것을 잊지 말기를
 
@@ -44,7 +44,7 @@ CNAME 레코드에서 www.mydomain.xyz 와 github 페이지와 매핑해줍니�
 
 **이제는 GitHub 에서 Custom domain을 설정해야 합니다.**
 
-GitHub/<user>.github.io Repository에서 `Settings` 항목에서  
+GitHub/\<user\>.github.io Repository에서 `Settings` 항목에서  
 
 ![깃허브 설정에서 custom domain 설정](https://ironhub.github.io/assets/DomainReg5.png)  
 
