@@ -48,4 +48,9 @@ GitHub/**user**.github.io Repository에서 `Settings` 항목에서
 
 ![깃허브 설정에서 custom domain 설정](https://ironhub.github.io/assets/DomainReg05.png)  
 
-될겁니다. 믿으세요. 이하는 생략합니다.
+제대로 매핑되었는지 확인하는 방법은 
+
+터미널을 여시고 
+
+![터미널 확인](https://ironhub.github.io/assets/DomainReg06.png)
+
