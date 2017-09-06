@@ -50,7 +50,6 @@ GitHub/**user**.github.io Repository에서 `Settings` 항목에서
 
 제대로 매핑되었는지 확인하는 방법은 
 
-터미널을 여시고 
+터미널을 여시고 dig  **yourdomain**.xyz 하면 CNAME 으로 매핑된 github page를 확인할 수 있습니다.
 
 ![터미널 확인](https://ironhub.github.io/assets/DomainReg06.png)
-
