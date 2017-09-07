@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title:  "Jekyll 사용"
+title:  "Jekyll 사용과 디렉토리 구조"
 
 date:   2017-09-07 10:53:59
 
@@ -12,9 +12,9 @@ categories: Iron
 tags: Jekyll Usage
 ---
 
-### Jekyll 사용###
+### Jekyll 사용 과 디렉토리 구조###
 
-
+##### Jekyll 사용 #####
 
 > Jekyll + github pages 를 활용하기전에 Jekyll에 대해 알아보자
 
