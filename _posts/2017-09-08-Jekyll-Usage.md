@@ -3,7 +3,7 @@ layout: post
 
 title:  "Jekyll 사용과 디렉토리 구조"
 
-date:   2017-09-08 00:28:59
+date:   2017-09-08 00:35:11
 
 author: C.W.Kim
 
