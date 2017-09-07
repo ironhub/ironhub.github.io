@@ -12,7 +12,9 @@ categories: Iron
 tags: Jekyll Usage
 ---
 
-##### Jekyll 사용 #####
+### Jekyll 사용###
+
+
 
 > Jekyll + github pages 를 활용하기전에 Jekyll에 대해 알아보자
 
@@ -22,7 +24,7 @@ tags: Jekyll Usage
 
 * jekyll serve 
 
-  ![jekyllServe](./assets/jekyllServe.png)
+  ![jekyllServe]({{site.url}}/assets/jekyllServe.png)
 
   ​
 
