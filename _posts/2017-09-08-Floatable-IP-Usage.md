@@ -3,7 +3,7 @@ layout: post
 
 title:  "유동 IP로 도메인 연결하기"
 
-date:   2017-09-07 15:02:11
+date:   2017-09-08 15:02:11
 
 author: C.W.Kim
 
