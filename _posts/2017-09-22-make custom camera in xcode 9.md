@@ -26,4 +26,4 @@ tags: Swift4
 
 
 
-[![Custom Camera](https://img.youtube.com/vi/7TqXrMnfJy8/0.jpg)](https://www.youtube.com/embed/v=7TqXrMnfJy8 "Everything is awesome") 
+[![Custom Camera](https://img.youtube.com/vi/7TqXrMnfJy8/0.jpg)](https://www.youtube.com/embed/7TqXrMnfJy8 "Everything is awesome") https://www.youtube.com/embed/7TqXrMnfJy8
