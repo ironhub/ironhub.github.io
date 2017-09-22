@@ -22,8 +22,8 @@ tags: Swift4
 
 `[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")`
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/EC1pZOXctV0" frameborder="0" allowfullscreen></iframe>
 
 
 
-
-[![Custom Camera](https://img.youtube.com/vi/7TqXrMnfJy8/0.jpg)](https://www.youtube.com/watch?feature=player_embedded&v=7TqXrMnfJy8 "Everything is awesome") 
+[![Custom Camera](https://img.youtube.com/vi/7TqXrMnfJy8/0.jpg)](https://www.youtube.com/embed/v=7TqXrMnfJy8 "Everything is awesome") 
