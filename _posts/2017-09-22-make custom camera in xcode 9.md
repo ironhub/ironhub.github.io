@@ -26,4 +26,4 @@ tags: Swift4
 
 
 
-[![YouTube](https://www.ironhub.xyz/assets/background.png)](https://www.youtube.com/watch?v=7TqXrMnfJy8  "Everything IS AWESOME") 
+[![YouTube](http://www.ironhub.xyz/assets/background.png)](https://www.youtube.com/watch?v=7TqXrMnfJy8) 
