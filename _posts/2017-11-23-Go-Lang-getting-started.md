@@ -13,7 +13,8 @@ tags: golang setup
 ---
 ### Go Lang Getting started ### 
 > GoLang is an open source, compiled and statically typed programming language created by Google. 
-### Why Golang ###
+
+### Why Golang###
 
 Here are some of the pros which I found in choosing Go
 
