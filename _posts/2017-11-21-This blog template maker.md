@@ -19,18 +19,21 @@ tags: nodejs blog template
 * file.js 를 활용하여 파일 쓰기
 * date-formatter를 활용하여 formatted date string으로 변환
 * readline 을 활용하여 콘솔에서 input을 처리 
-##### [**Source Code**]#####
+##### [Node.JS **Source Code**]#####
 
 ```javascript 
-// Node.JS 코드 
 const readline = require('readline') ;
 const fs = require('fs') ;
 const format = require('date-format') ;
+
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout 
 }) ;
-var title = "Default title"
+
+
+const targetDir = "/Users/iron/_posts/" ;
+var title = "Default title" ;
 var sdate = new Date() ;
 var date = format.asString('yyyy-MM-dd hh:mm:ss', sdate ) ; 
 var author = "C.W.Kim" ;
@@ -38,6 +41,7 @@ var category = "Iron" ;
 var tags = `${title}` ;
 
 rl.question('******* Make Your Blog Template ********  \n > Title (Enter: Untitled ) :  ' , (answer) => {
+    
     if (answer == "") {
         title = "Untitled" ;
     } else {
@@ -81,18 +85,83 @@ rl.question('******* Make Your Blog Template ********  \n > Title (Enter: Untitl
                             "```\n" +
                             "![BlockChain](https://ironhub.github.io/assets/BlockChain@3x.png)\n "
                 console.log(header+body) ;                
-                const filename = format.asString('yyyy-MM-dd-', sdate ) + title.trim() + ".md" ;
-                fs.writeFile("/Users/iron/Dropbox/Blog/ironhub.github.io/_posts/"+filename ,header+body, (error) => {
+                const filename = targetDir + format.asString('yyyy-MM-dd-', sdate ) + title.replace(/ /g,"-") + ".md" ;
+                fs.writeFile(filename ,header+body, (error) => {
                     if (error) {
                         console.log(error + " is occurred !!!!") ;
                     } 
                     console.log("Successfully wrote data!!! ") ;
                 } ) ;
+
+                fs.writeFile("/Users/iron/blog/current.file",filename+"\n",(error)=> {
+                    if (error) {
+                        console.log(error + " is occurred !!!") ;
+                    }
+                    console.log(" Successfully wrote meta data!!!! ") ;
+                }) ;
                 rl.close() ;
             } ) ;
+
         } ) ;
     } ) ;
     
 }) ;
+
+
 ```
+
+#### Shell Script ####
+
+```sh
+#!/bin/bash
+cd /Users/iron/blog
+npm run start
+```
+
+
+
+### 여기에서 한 걸음 더 나아가 ###
+
+---
+
+Mac 에서 자동으로 처리하는 앱을 **AppleScript** 를 이용하여 만들수 있음.
+
+
+```applescript
+display alert "마크다운 블로그 템플릿 빌더입니다. 
+#MarkDown
+#Jekyll 
+#GitHub.io"
+
+set tobeexecuted to "/Users/iron/blog/run.sh"
+
+tell application "iTerm"
+	open tobeexecuted
+	set cwindow to get current window of application "iTerm"
+	set ctab to get current tab of cwindow
+	repeat
+		try
+			delay 3
+			set otab to get get current tab of cwindow
+			if otab is not equal to ctab then
+				break
+			end if
+		on error
+			exit repeat
+		end try
+	end repeat
+	
+	tell application "System Events"
+		set md to do shell script "tail /Users/iron/blog/current.file "
+
+	tell application "Typora"
+			open md
+		end tell
+	end tell
+	
+end tell
+
+
+```
+---
 
