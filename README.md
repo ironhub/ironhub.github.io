@@ -1,21 +1,4 @@
-# Centrarium [![Circle CI](https://circleci.com/gh/bencentra/centrarium/tree/master.svg?style=svg)](https://circleci.com/gh/bencentra/centrarium/tree/master)
-
-A simple yet classy theme for your Jekyll website or blog. Customizable to fit your style or brand.
-
-Built with these awesome libraries:
-* [Bourbon][bourbon]
-* [Neat][neat]
-* [Bitters][bitters]
-* [Refills][refills]
-* [Font Awesome][fontawesome]
-* [HighlightJS][highlightjs]
-* [Lightbox][lightbox]
-
-Here's a [demo](http://bencentra.com/centrarium). It also works on [GitHub Pages](http://bencentra.github.io/centrarium/). I also use it for [my own website][bencentra].
-
-Inspired by dirkfabisch's [Mediator](https://github.com/dirkfabisch/mediator) theme, which I previously used for my own blog, as well as [Type Theme](http://rohanchandra.github.io/type-theme/).
-
-Cover image by Chris M. Morris ([flickr][cover]).
+# 뤼드 ~미이!!!
 
 ## Features
 
@@ -29,6 +12,12 @@ This theme comes with a number of features, including:
 * Lightbox for viewing full-screen photos and albums
 * Google Analytics with custom page name tracking
 * Social media integration (Twitter, Facebook, LinkedIn, GitHub, and more)
+
+#### 
+
+
+
+
 
 ## Installation
 
