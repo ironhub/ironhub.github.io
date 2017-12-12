@@ -14,6 +14,9 @@ th {
 }
 
 td {
+  border-right: $base-border;
+  border-left: $base-border;
+  border-top: $base-border;
   border-bottom: $base-border;
   padding: $small-spacing 0;
 }
