@@ -7,18 +7,16 @@ table {
 }
 
 th {
-  border-bottom: 1px solid darken($base-border-color, 15%);
+  border-top: 2px solid darken($base-border-color, 15%);
+  border-bottom: 2px solid darken($base-border-color, 15%);
   font-weight: 600;
-  padding: $small-spacing 0;
+  padding: $small-spacing 5;
   text-align: left;
 }
 
 td {
-  border-right: $base-border;
-  border-left: $base-border;
-  border-top: $base-border;
   border-bottom: $base-border;
-  padding: $small-spacing 0;
+  padding: $small-spacing 5;
 }
 
 tr,
