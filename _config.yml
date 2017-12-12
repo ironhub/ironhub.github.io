@@ -23,7 +23,7 @@ inter_post_navigation: false
 #highlightjs_theme: "vs"
 #highlightjs_theme: "dracula"
 #highlightjs_theme: "github"
-highlightjs_theme: "school-book"
+highlightjs_theme: "xcode"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 # Automatically generate post archives by dates, tags, and categories
