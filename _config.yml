@@ -21,10 +21,11 @@ paginate_path: "/page:num/"
 inter_post_navigation: false
 #highlightjs_theme: "monokai-sublime"
 #highlightjs_theme: "vs"
-highlightjs_theme: "dracula"
+#highlightjs_theme: "dracula"
 #highlightjs_theme: "github"
 #highlightjs_theme: "xcode"
 #highlightjs_theme: "atelier-seaside-dark"
+highlightjs_theme: "school-book"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 # Automatically generate post archives by dates, tags, and categories
