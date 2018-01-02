@@ -12,7 +12,7 @@ categories: Iron
 tags: OEL Docker 
 ---
 ### Docker install on Oracle Linux 7 ### 
-> Oracle Linux 7 에 Docker를 인스톨하는 과정
+> Oracle Linux 7 에 Docker를 인스톨하는 과정과 http://container-registry.oracle.com/ 에 등록되어 있는 이미지를 가져와서 - WebLogic Server - running 해보는 것까지 .
 
 [참고 문서](https://blogs.oracle.com/hlsu/install-docker-on-oracle-linux-7)
 
@@ -49,7 +49,7 @@ enabled=1
 
 * 기본으로 ol7_addons 에 enabled=0 으로 세팅되어 있어서 enable=1로 세팅했음
 
-[install docker on oel7 iaas](https://ironhub.github.io/assets/screenshots/install_docker_on_oel7.png)
+![install docker on oel7 iaas](https://ironhub.github.io/assets/screenshots/install_docker_on_oel7.png)
 
 ```bash
 [opc@iaas yum.repos.d]$ sudo systemctl start docker
@@ -87,9 +87,46 @@ Hint: Some lines were ellipsized, use -l to show in full.
 
 [Oracle Container Registry - Registration ](http://container-registry.oracle.com/)
 
-[Screenshot ](https://ironhub.github.io/assets/screenshots/OracleContainerRegistry.png)
+![Screenshot ](https://ironhub.github.io/assets/screenshots/OracleContainerRegistry.png)
+
+
 
 #### Oracle WebLogic Container ####
 
+[문서 참조](https://container-registry.oracle.com/pls/apex/f?p=113:4:9610497423608::NO::P4_REPOSITORY,AI_REPOSITORY,AI_REPOSITORY_NAME,P4_REPOSITORY_NAME:5,5,Oracle%20WebLogic%20Server,Oracle%20WebLogic%20Server&cs=3KrCuLJnkxQpwyy5R6Z7CC9kF1eB73ZOh5dggblvKtxibM8R05OCLZoOIIRXL_u3R2kRvYktA4pK0putUcyxiAw)
+
+```bash
+# docker run -d -p 7001:7001 container-registry.oracle.com/middleware/weblogic:12.2.1.3
 
 
+[root@iaas 8aa9a970ed1fe75fd3a525efd09c4829b12f7e5f7ad64609f8bdd57a3b5b6c6e]# docker ps -a
+CONTAINER ID        IMAGE                                                        COMMAND                  CREATED             STATUS                           PORTS                    NAMES
+8aa9a970ed1f        container-registry.oracle.com/middleware/weblogic:12.2.1.3   "/u01/oracle/creat..."   About an hour ago   Created                                                   gifted_newton
+3e58f8f7e424        container-registry.oracle.com/middleware/weblogic:12.2.1.3   "/u01/oracle/creat..."   About an hour ago   Up About an hour                 0.0.0.0:7001->7001/tcp   dreamy_mayer
+f1433ae0820c        container-registry.oracle.com/middleware/weblogic:12.2.1.3   "/u01/oracle/creat..."   About an hour ago   Exited (137) About an hour ago                            keen_easley
+
+# cd /var/lib/docker/containers
+
+[root@iaas containers]# ls -alrt
+total 16
+drwx--x--x 11 root root  130 Jan  2 01:20 ..
+drwx------  5 root root 4096 Jan  2 05:32 .
+drwx------  3 root root 4096 Jan  2 05:34 
+drwx------  4 root root 4096 Jan  2 06:09 3e58f8f7e4244739ed75ce4bedebc629af80685f15022d4474da6ba526bd837d
+
+[root@iaas containers]# docker logs 3e58f8f7e4244739ed75ce4bedebc629af80685f15022d4474da6ba526bd837d | grep password
+      ----> 'weblogic' admin password: cxQ7FWgV
+admin password  : [cxQ7FWgV]
+*  password assigned to an admin-level user.  For *
+
+-----------  admin user 가 weblogic 이고, password 는 cxQ7FWgV 임을 확인할수 있다.
+
+```
+
+#### WebLogic Console ####
+
+* http://<your_host>:7001/console 
+*  admin user : weblogic
+* password : cxQ7FWgV
+
+![Weblogic Console](https://ironhub.github.io/assets/screenshots/WeblogicConsole.png)
