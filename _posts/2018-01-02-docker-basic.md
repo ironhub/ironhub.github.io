@@ -99,6 +99,16 @@ Login Succeeded
                      ___) >____) >___   ^\_\_\_\_\_\_\)
                     ^^^//\\_^^//\\_^       ^(\_\_\_\)
                       ^^^ ^^ ^^^ ^
+                      
+[root@iaas ~]# docker stop `docker ps -a -q`
+500a6f1a0d72
+b3d090b24ae9
+3f205cf446f5
+e1c518f30493
+8aa9a970ed1f
+3e58f8f7e424
+f1433ae0820c
+
 
 ```
 
