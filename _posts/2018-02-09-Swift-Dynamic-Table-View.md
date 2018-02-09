@@ -1,7 +1,7 @@
 ---
 layout: post 
 
-title: [Swift] Dynamic Table View  
+title: Swift Dynamic Table View  
 
 date: 2018-02-09 15:03:22 
 
@@ -21,4 +21,3 @@ tags: Swift Dynamic TableView
 // Javascript manner 
 ```
 ![BlockChain](https://ironhub.github.io/assets/BlockChain@3x.png)
- 
