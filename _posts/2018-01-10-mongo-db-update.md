@@ -44,6 +44,11 @@ db.createUser({ user:"realuser", pwd:"real123", roles: [ {role: "readWrite", db:
 
 ```
 
-
-
+```bash
+# Export backup to specified dirctory 
+mongodump -d <db> -o <directory>
+mongodump --host xx.xxx.xx.xx --port 27017 --db your_db_name --username your_user_name --password your_password --out /target/folder/path
+# Import backup from specified directory  
+mongorestore -d database_name directory_backup_where_mongodb_tobe_rest
+```
 
