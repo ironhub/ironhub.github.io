@@ -110,12 +110,14 @@ OCCS Create Instance 를 하면 , Manager/ Worker 기본 두개의 OCPU를 점�
 다음과 같은 id/pwd 로긴 창이 뜨고 인스턴스 만들때 지정했던 admin / pwd 로 접근하면 다음과 같은 대시보드가 열린다. 
 ![OCCS 관리자 콘솔 로그인](https://ironhub.github.io/assets/screenshots/OCCS02.png)
 ![OCCS 관리자 콘솔 대시보드](https://ironhub.github.io/assets/screenshots/OCCS03.png)
+
 #### 서비스 등록 ####
 왼쪽 메뉴의 Services 를 눌러
 ![OCCS Services](https://ironhub.github.io/assets/screenshots/OCCS04.png)
 ![OCCS Services -> New Service  서비스 등록](https://ironhub.github.io/assets/screenshots/OCCS05.png)
 docker run 추가 커맨드를 작성한다. 그림의 예는  외부포트/내부포트 지정
 ![서비스 등록 - 도커 커맨드](https://ironhub.github.io/assets/screenshots/OCCS06.png)
+
 #### Deployment ####
 ![디플로이](https://ironhub.github.io/assets/screenshots/OCCS07.png)
 ![디플로이 상태](https://ironhub.github.io/assets/screenshots/OCCS08.png)
