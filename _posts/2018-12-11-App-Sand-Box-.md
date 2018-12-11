@@ -3,7 +3,7 @@ layout: post
 
 title: App Sand Box  
 
-date: 2018-15-11 
+date: 2018-12-11 
 
 author: C.W.Kim 
 
@@ -21,4 +21,3 @@ tags: macOS, Swift
 // swift sentence 
 ```
 ![BlockChain](https://ironhub.github.io/assets/BlockChain@3x.png)
- 
